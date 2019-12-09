@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true"
+         verbose="true">
+    <testsuites>
+        <testsuite name="poneys">
+            <file>tests/PoneysTest.php</file>
+        </testsuite>
+
+        <testsuite name="base">
+            <file>tests/ClassTest.php</file>
+        </testsuite>
+    </testsuites>
+
+    <logging>
+        <log type="junit" target="/tmp/logfile.xml"/>
+    </logging>
+
+    <php>
+        <const name="taillechamp" value="15"/>
+        <const name="numberP" value="10"/>
+    </php>
+</phpunit>
