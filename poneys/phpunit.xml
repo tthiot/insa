@@ -16,6 +16,7 @@
     </logging>
 
     <php>
+        <includepath>.</includepath>
         <const name="taillechamp" value="15"/>
         <const name="numberP" value="10"/>
     </php>
