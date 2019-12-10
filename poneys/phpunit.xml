@@ -12,7 +12,7 @@
     </testsuites>
 
     <logging>
-        <log type="junit" target="/tmp/logfile.xml"/>
+        <log type="junit" target="logs/logfile.xml"/>
     </logging>
 
     <php>

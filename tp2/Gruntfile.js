@@ -35,9 +35,13 @@ module.exports = function(grunt){
 
         qunit: {
             files: ['dist/*.html'],
-            options:{
+            options: {
+                timeout: 10000,
                 puppeteer: {
-                    executablePath: "/usr/bin/firefox"
+                  env: {
+                    TZ: "UTC"
+                  },
+                  executablePath: "/usr/bin/chromium"
                 }
             }
         },
